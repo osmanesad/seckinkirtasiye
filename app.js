@@ -18,7 +18,8 @@ const MAPS_QUERY = encodeURIComponent(STORE.addressLine);
 const MAPS_URL = `https://www.google.com/maps/place/Se%C3%A7kin+K%C4%B1rtasiye/@41.184089,28.7345643,17z/data=!3m1!4b1!4m6!3m5!1s0x14caabc4536e6605:0xbbeea751a509f453!8m2!3d41.184089!4d28.7345643!16s%2Fg%2F1ptxg309j?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D`;
 
 // Basit embed: query üzerinden
-const MAPS_EMBED_URL = `https://www.google.com/maps?q=${MAPS_QUERY}&output=embed`;
+const MAPS_EMBED_URL ="https://www.google.com/maps?output=embed&q=Se%C3%A7kin+K%C4%B1rtasiye&ll=41.184089,28.7345643&z=19";
+
 
 // Çalışma saatleri (istersen düzenle)
 // 0 = Pazar, 1 = Pazartesi ... 6 = Cumartesi
