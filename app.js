@@ -330,3 +330,30 @@ function boot() {
 }
 
 document.addEventListener("DOMContentLoaded", boot);
+
+/* =========================
+   Theme Toggle (Light / Dark)
+========================= */
+const themeToggle = document.getElementById("themeToggle");
+const savedTheme = localStorage.getItem("theme");
+
+if (savedTheme) {
+  document.documentElement.setAttribute("data-theme", savedTheme);
+  if (themeToggle) {
+    themeToggle.textContent = savedTheme === "dark" ? "☀️" : "🌙";
+  }
+}
+
+if (themeToggle) {
+  themeToggle.addEventListener("click", () => {
+    const currentTheme =
+      document.documentElement.getAttribute("data-theme") === "dark"
+        ? "light"
+        : "dark";
+
+    document.documentElement.setAttribute("data-theme", currentTheme);
+    localStorage.setItem("theme", currentTheme);
+    themeToggle.textContent = currentTheme === "dark" ? "☀️" : "🌙";
+  });
+}
+
