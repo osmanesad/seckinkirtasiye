@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Seçkin Kitap Kırtasiye Oyuncak ve Ofis Malzemeleri — Arnavutköy/İstanbul. Hızlı iletişim, yol tarifi, çalışma saatleri, duyurular."
+    />
+    <title>Seçkin Kırtasiye — Arnavutköy</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="icon.png" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Seçkin Kırtasiye — Arnavutköy" />
+    <meta
+      property="og:description"
+      content="Kitap • Kırtasiye • Ofis • Fotokopi • Faks — Hızlı yol tarifi ve iletişim."
+    />
+    <meta property="og:image" content="seckin_logo.png" />
+    <meta property="og:type" content="website" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="topbar">
+      <div class="container topbar__inner">
+        <a class="brand" href="#top" aria-label="Seçkin Kırtasiye">
+          <img class="brand__logo" src="seckin_logo.png" alt="Seçkin Kırtasiye logosu" />
+        </a>
+
+        <nav class="nav">
+          <a href="#iletisim">İletişim</a>
+          <a href="#saatler">Saatler</a>
+          <a href="#urunler">Ürünler</a>
+          <a href="#duyurular">Duyurular</a>
+          <a href="#bayilikler">Yayın Evleri</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <h1>Seçkin Kırtasiye</h1>
+            <p class="lead">
+              <strong>2013’ten beri</strong> Arnavutköy’de: kitap, kırtasiye, ofis malzemeleri ve hızlı hizmetler.
+            </p>
+
+            <div class="statusCard" role="status" aria-live="polite">
+              <div class="statusDot" id="statusDot"></div>
+              <div>
+                <div class="statusTitle" id="statusTitle">Durum yükleniyor…</div>
+                <div class="statusMeta" id="statusMeta"></div>
+              </div>
+            </div>
+
+            <div class="actions">
+              <a class="btn btn--primary" id="callBtn" href="tel:+902125976867">Hemen Ara</a>
+              <a class="btn" id="mapsBtn" target="_blank" rel="noreferrer">Yol Tarifi Al</a>
+              <a class="btn btn--ghost" id="igBtn" target="_blank" rel="noreferrer">Instagram</a>
+            </div>
+
+            <div class="quickInfo">
+              <div class="pill" title="Telefon">☎ 0212 597 68 67</div>
+              <div class="pill" title="Konum">📍 Arnavutköy Merkez</div>
+              <div class="pill" title="Yakın tarif">Avlu 34 AVM yolu • BİM yanı</div>
+            </div>
+          </div>
+
+          <div class="hero__card">
+            <h2>Hızlı İletişim</h2>
+            <div class="cardList">
+              <a class="cardLink" href="tel:+902125976867">
+                <span class="cardIcon">📞</span>
+                <span>
+                  <strong>Ara</strong><br />
+                  0212 597 68 67
+                </span>
+              </a>
+
+              <a class="cardLink" id="mapsBtn2" target="_blank" rel="noreferrer">
+                <span class="cardIcon">🗺️</span>
+                <span>
+                  <strong>Tarif al</strong><br />
+                  Google Haritalar
+                </span>
+              </a>
+
+              <a class="cardLink" href="#iletisim">
+                <span class="cardIcon">📌</span>
+                <span>
+                  <strong>Adres</strong><br />
+                  No: 1411A • Eski Edirne Asfaltı Cd.
+                </span>
+              </a>
+            </div>
+
+            <div class="note">
+              <strong>Not:</strong> Okul sezonu ve sınav dönemlerinde stok/ürün için arayıp hızlıca teyit alabilirsiniz.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- İLETİŞİM -->
+      <section id="iletisim" class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2>İletişim & Konum</h2>
+            <p>Sayfadan tek tıkla arayabilir veya haritadan direkt yol tarifi alabilirsin.</p>
+          </div>
+
+          <div class="grid2">
+            <div class="panel">
+              <h3>Adres</h3>
+              <p class="mono">
+                Arnavutköy Merkez Mah. Eski Edirne Asfaltı Cad. No: 1411A<br />
+                Arnavutköy / İstanbul
+              </p>
+              <p class="muted">
+                Adres Tarif: Avlu 34 AVM yolu üstünde, BİM Market yanında, Cemal Reşit Rey İlkokulu karşısında.
+              </p>
+
+              <div class="miniActions">
+                <a class="btn btn--primary" href="tel:+902125976867">Ara</a>
+                <a class="btn" id="mapsBtn3" target="_blank" rel="noreferrer">Tarif Al</a>
+              </div>
+            </div>
+
+            <div class="panel">
+              <h3>Harita</h3>
+              <div class="mapWrap">
+                <iframe
+                  id="mapFrame"
+                  title="Seçkin Kırtasiye Harita"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <p class="muted" style="margin-top: 10px">
+                Harita açılmazsa: <a id="mapsFallback" target="_blank" rel="noreferrer">Google Haritalar’da aç</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SAATLER -->
+      <section id="saatler" class="section section--alt">
+        <div class="container">
+          <div class="section__head">
+            <h2>Çalışma Saatleri</h2>
+            <p>Güncel durum otomatik hesaplanır (açık/kapalı).</p>
+            <p class="muted" style="margin-top: 10px">
+  Pazar günleri genelde kapalıyız; dönemsel değişiklik olabilir, arayarak teyit edebilirsiniz.
+</p>
+
+          </div>
+
+          <div class="hours">
+            <div class="hours__table" id="hoursTable" aria-label="Çalışma saatleri tablosu"></div>
+            <div class="hours__aside">
+              <div class="panel">
+                <h3>Hizmetler</h3>
+                <ul class="list">
+                  <li>Fotokopi</li>
+                  <li>Faks</li>
+                  <li>Çıktı / baskı</li>
+                  <li>Okula yardımcı kaynak kitaplar</li>
+                  <li>Okul & ofis kırtasiye</li>
+                </ul>
+                <div class="muted">
+                  Bazı hizmetler yoğun saatlerde sıra ile ilerleyebilir — arayıp bilgi alabilirsiniz.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ÜRÜNLER -->
+      <section id="urunler" class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2>Kısa Ürün Portföyü</h2>
+            <p>En çok sorulan kategoriler — stok durumunu telefonla hızlıca teyit edebilirsin.</p>
+          </div>
+
+          <div class="cards3">
+            <div class="card">
+              <h3>Okul</h3>
+              <p>Defter, kalem, çanta aksesuarları, resim malzemeleri, kırtasiye setleri.</p>
+            </div>
+            <div class="card">
+              <h3>Kitap & Kaynak</h3>
+              <p>Okula yardımcı kaynaklar, test kitapları ve seçili yayınlar (bayilikler).</p>
+            </div>
+            <div class="card">
+              <h3>Ofis</h3>
+              <p>Dosyalama, sarf malzemeleri, yazı gereçleri, zımba/poşet dosya vb.</p>
+            </div>
+          </div>
+
+          <div class="callout">
+            <div>
+              <strong>Hızlı sipariş:</strong> Arayıp liste verin; uygunsa hazırlayıp teslim edelim.
+            </div>
+            <a class="btn btn--primary" href="tel:+902125976867">Ara</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- DUYURULAR -->
+      <section id="duyurular" class="section section--alt">
+        <div class="container">
+         <div class="section__head">
+  <h2>Duyurular</h2>
+  <p>Güncel duyurular ve bilgilendirmeler.</p>
+</div>
+
+
+          <div class="announcements" id="announcements"></div>
+        </div>
+      </section>
+
+      <!-- BAYİLİK / YAYIN EVLERİ -->
+      <section id="bayilikler" class="section">
+        <div class="container">
+          <div class="section__head">
+            <h2>Yayın Evleri</h2>
+            <p>Bayisi olduğunuz yayın evlerine yönlendirme linklerini buraya ekleyebiliriz.</p>
+          </div>
+
+          <div class="panel">
+            <div class="publisherList" id="publisherList"></div>
+            <div class="muted" style="margin-top: 10px">
+             
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="container footer__grid">
+          <div>
+            <div class="footer__brand">Seçkin Kitap Kırtasiye Oyuncak ve Ofis Malzemeleri</div>
+            <div class="footer__meta">2013’ten beri • Arnavutköy / İstanbul</div>
+          </div>
+
+          <div class="footer__links">
+            <a href="tel:+902125976867">Ara</a>
+            <a id="mapsFooter" target="_blank" rel="noreferrer">Tarif</a>
+            <a id="igFooter" target="_blank" rel="noreferrer">Instagram</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
