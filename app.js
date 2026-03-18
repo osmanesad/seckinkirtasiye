@@ -54,7 +54,7 @@ const ANNOUNCEMENTS = [
 
 // Bayisi olduğunuz yayın evi linkleri (placeholder — sen linkleri verince doldur)
 const PUBLISHERS = [
-  { name: "Ata Yayıncılık", url: "https://www.atayayincilik.com.tr/" },
+  { name: "Team Elt Yayıncılık", url: "https://www.teamelt.com/" },
   { name: "Model Eğitim Yayınları", url: "https://www.modelegitim.com/" },
   { name: "Mavideniz Yayınları", url: "https://www.mavidenizyayinlari.com/" },
   { name: "Mutlu Yayınları", url: "https://www.e-mutlu.com/" },
