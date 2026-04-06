@@ -25,12 +25,12 @@ const MAPS_EMBED_URL ="https://www.google.com/maps?output=embed&q=Se%C3%A7kin+K%
 // 0 = Pazar, 1 = Pazartesi ... 6 = Cumartesi
 // format: { open: "09:00", close: "20:00" } veya null (kapalı)
 const HOURS = {
-  1: { open: "07:15", close: "19:00" }, // Pazartesi
-  2: { open: "07:15", close: "19:00" }, // Salı
-  3: { open: "07:15", close: "19:00" }, // Çarşamba
-  4: { open: "07:15", close: "19:00" }, // Perşembe
-  5: { open: "07:15", close: "19:00" }, // Cuma
-  6: { open: "09:00", close: "18:30" }, // Cumartesi
+  1: { open: "07:30", close: "19:30" }, // Pazartesi
+  2: { open: "07:30", close: "19:30" }, // Salı
+  3: { open: "07:30", close: "19:30" }, // Çarşamba
+  4: { open: "07:30", close: "19:30" }, // Perşembe
+  5: { open: "07:30", close: "19:30" }, // Cuma
+  6: { open: "09:30", close: "18:30" }, // Cumartesi
   0: null, // Pazar Kapalı
 };
 
