@@ -86,12 +86,12 @@ const PUBLISHERS = [
 
 ```js
 const HOURS = {
-  1: { open: "07:15", close: "19:00" }, // Pazartesi
-  2: { open: "07:15", close: "19:00" },
-  3: { open: "07:15", close: "19:00" },
-  4: { open: "07:15", close: "19:00" },
-  5: { open: "07:15", close: "19:00" },
-  6: { open: "09:00", close: "18:30" }, // Cumartesi
+  1: { open: "07:30", close: "19:30" }, // Pazartesi
+  2: { open: "07:30", close: "19:30" },
+  3: { open: "07:30", close: "19:30" },
+  4: { open: "07:30", close: "19:30" },
+  5: { open: "07:30", close: "19:30" },
+  6: { open: "09:30", close: "18:30" }, // Cumartesi
   0: null // Pazar (kapalı)
 };
 ```
@@ -115,7 +115,6 @@ Herhangi bir build işlemi gerekmez.
 
 **Seçkin Kitap Kırtasiye Oyuncak ve Ofis Malzemeleri**  
 Arnavutköy / İstanbul  
-
 Telefon: 0212 597 68 67  
 
 ---
